@@ -11,7 +11,7 @@ def gitch_commit(message: str, include_files=True, include_footer=True):
 
     footer = ""
     if include_footer:
-        footer = '\n\nThis devlog was automated with [Gitch](https://github.com/YOUR_USERNAME/gitch)'
+        footer = '\n\nThis devlog was automated with [Gitch](https://github.com/EleshN/Gitch)'
 
     full_message = message + file_list + footer
     post_devlog(title=message, body=full_message)
