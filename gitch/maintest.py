@@ -1,3 +1,7 @@
 from gitch.core import gitch_commit
 
-gitch_commit("First Gitch Devlog", False, True)
+try:
+    gitch_commit("First Gitch Devlog", False, True)
+except Exception as e:
+    import traceback
+    traceback.print_exc()
